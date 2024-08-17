@@ -25,5 +25,5 @@ Dataset source: https://www.kaggle.com/datasets/swaptr/layoffs-2022/data
 * Obj3: Ranking companines (Top-5) with more layoffs per year.
 
 ## Methodology
-<img src="file:///Users/utilizador/Desktop/Methodology.png" width="60%">
+<img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231/Methodology.png" width="80%">
 
