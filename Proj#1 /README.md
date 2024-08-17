@@ -27,3 +27,4 @@ Dataset source: https://www.kaggle.com/datasets/swaptr/layoffs-2022/data
 ## Methodology
 <img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231/Methodology.png" width="80%">
 
+### Create a new database and import data
