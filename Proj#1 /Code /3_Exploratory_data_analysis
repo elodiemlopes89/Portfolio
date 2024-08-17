@@ -1,0 +1,90 @@
+-- Exploratory Data Analysis (EDA)
+
+SELECT *
+FROM layoff_table3;
+
+-- Objective #1: Finding the percentage of layoffs per company, industry, country and year
+
+-- company
+SELECT company, SUM(total_laid_off)
+FROM layoff_table3
+GROUP BY company
+ORDER BY 2 DESC;
+
+-- industry
+SELECT industry, SUM(total_laid_off)
+FROM layoff_table3
+GROUP BY industry
+ORDER BY 2 DESC;
+
+-- country
+SELECT country, SUM(total_laid_off)
+FROM layoff_table3
+GROUP BY country
+ORDER BY 2 DESC;
+
+-- year
+SELECT YEAR(`date`), SUM(total_laid_off)
+FROM layoff_table3
+GROUP BY YEAR(`date`)
+ORDER BY 1 DESC;
+
+-- Objective 2: Find the layoff peak within a year
+
+-- 2020: layoff peak: april
+SELECT MONTH(`date`) AS month, 
+       SUM(total_laid_off) AS total_laid_off
+FROM layoff_table3
+WHERE YEAR(`date`)=2020
+GROUP BY MONTH(`date`)
+ORDER BY total_laid_off DESC;
+
+-- 2021: peak month january
+SELECT MONTH(`date`) AS month, 
+       SUM(total_laid_off) AS total_laid_off
+FROM layoff_table3
+WHERE YEAR(`date`)=2021
+GROUP BY MONTH(`date`)
+ORDER BY total_laid_off DESC;
+
+-- 2022: peak month october
+SELECT MONTH(`date`) AS month, 
+       SUM(total_laid_off) AS total_laid_off
+FROM layoff_table3
+WHERE YEAR(`date`)=2022
+GROUP BY MONTH(`date`)
+ORDER BY total_laid_off DESC;
+
+-- 2023: peak month january
+SELECT MONTH(`date`) AS month, 
+       SUM(total_laid_off) AS total_laid_off
+FROM layoff_table3
+WHERE YEAR(`date`)=2023
+GROUP BY MONTH(`date`)
+ORDER BY total_laid_off DESC;
+-- we only have info from 03-11-2020 until 06-3-2023
+
+SELECT MIN(`date`), MAX(`date`)
+FROM layoff_table3;
+
+
+-- Objective 3: Ranking companies (top 5) with more layoffs per year
+
+WITH Company_year (company, years, total_laid_offs) AS
+(
+SELECT company, YEAR(`date`), SUM(total_laid_off)
+FROM layoff_table3
+WHERE total_laid_off IS NOT NULL
+GROUP BY company, YEAR(`date`)
+), Company_Year_Rank AS
+(SELECT *, 
+DENSE_RANK() OVER (PARTITION BY years ORDER BY total_laid_offs DESC) AS ranking
+FROM Company_year
+WHERE years IS NOT NULL
+)
+SELECT *
+FROM Company_Year_Rank
+WHERE ranking <= 5;
+
+
+
