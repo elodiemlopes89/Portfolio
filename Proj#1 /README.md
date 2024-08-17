@@ -37,3 +37,11 @@ Data was cleaning using MySQL (version 8.0.38):
 1. Duplicated rows were removed;
 2. Data were standardized after visual inspection of each table column (removal of text empty spaces), text standardization, the date column was chenged from text to date format (yyyy-mm-dd));
 3. Null and blank values from specific columns used in the exploratory data analysis were removed.
+
+### [Exploratory data analysis](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Code%20/3_Exploratory_data_analysis)
+Data was analyzed according to defined objectives using MySQL (version 8.0.38).
+
+
+## Results
+
+### Obj1
