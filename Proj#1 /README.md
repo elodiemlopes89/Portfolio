@@ -44,4 +44,27 @@ Data was analyzed according to defined objectives using MySQL (version 8.0.38).
 
 ## Results
 
-### Obj1
+### Percentage of layoffs per [company](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/total_num_lay_COMPANY.csv), [industry](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/total_num_lay_INDUSTRY.csv), [country](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/total_num_lay_COUNTRY.csv) and [year](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/total_num_lay_YEAR.csv)
+
+* The available data (since 03-11-2020 until 06-03-2023) indicates that the highest number of layoffs occurred in 2022 (41.93%).
+<img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/Obj1_year_fig.png" width="40%">
+
+* Amazon had the highest number of layoffs (18.41%).
+<img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/Obj1_company_fig.png" width="40%">
+
+* The industry sector "Consumer" had the highest number of layoffs (15.88%).
+<img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/Obj1_industry_fig.png" width="40%">
+
+ * The United States had the highest number of layoffs (70.34%).
+<img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj1/Obj1_country_fig.png" width="40%">
+
+### Layoff peak month
+Percentage of layoffs for each month for the year of [2020](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj2/peak2020.csv), [2021](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj2/peak2021.csv), [2022](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj2/peak2022.csv) and [2023](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj2/peak2023.csv).  Values in red indicate the highest percentages.
+<img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj2/Obj2_fig.png" width="40%">
+
+### [Ranking companies (Top-5) highest layoff numbers per year](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj3/RankingCompany.csv)
+
+<img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Results%20/Obj3/Obj3_fig.png" width="40%">
+
+# Acknowledgements
+Kaggle comunity and @AlexTheAnalyst.
