@@ -27,4 +27,7 @@ Dataset source: https://www.kaggle.com/datasets/swaptr/layoffs-2022/data
 ## Methodology
 <img src="https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231/Methodology.png" width="80%">
 
-### Create a new database and import data
+### [Create a new database and import data](https://github.com/elodiemlopes89/Portfolio/blob/main/Proj%231%20/Code%20/1_Create_a_new_database%26import_data.sql)
+
+A new database was created in MySQL and the csv Kaggle file was imported using the Terminal.
+
