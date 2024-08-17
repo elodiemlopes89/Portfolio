@@ -1,4 +1,4 @@
-# Portfolio
+[](url)# Portfolio
 > Elodie's data science portfolio
 
 ### About 
@@ -22,4 +22,4 @@ Presently, I am finishing my PhD in Biomedical Engineering at the Faculty of Eng
 * Medium: https://medium.com/@emlopes.sc
 
 ### Projects
-> [Proj#1 - COVID 19 Layoffs Data Cleaning and Exploratory Data Analysis] (https://github.com/elodiemlopes89/Portfolio/tree/main/Proj%231%20)
+> [`Proj#1 - COVID 19 Layoffs Data Cleaning and Exploratory Data Analysis`](https://github.com/elodiemlopes89/Portfolio/tree/main/Proj%231%20)
